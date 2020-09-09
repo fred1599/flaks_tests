@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 
 from dotenv import load_dotenv
 
@@ -17,6 +18,13 @@ load_dotenv(dotenv_path)
 @app.route("/")
 def hello():
     return "hello"
+
+
+@app.route("/create_user", methods=["POST"])
+def create_view_user():
+    return json.dumps({
+        "test": "ok",
+    })
 
 
 if __name__ == "__main__":
