@@ -5,31 +5,40 @@
 #    pip-compile --output-file=requirements/dev.txt requirements/prod.txt
 #
 alembic==1.4.2            # via -r requirements/prod.txt, flask-migrate
+appdirs==1.4.4            # via -r requirements/prod.txt, virtualenv
 attrs==20.2.0             # via -r requirements/prod.txt, pytest
+cfgv==3.2.0               # via -r requirements/prod.txt, pre-commit
 click==7.1.2              # via -r requirements/prod.txt, flask, pip-tools
+distlib==0.3.1            # via -r requirements/prod.txt, virtualenv
+filelock==3.0.12          # via -r requirements/prod.txt, virtualenv
 flask-migrate==2.5.3      # via -r requirements/prod.txt
 flask-script==2.0.6       # via -r requirements/prod.txt
 flask-sqlalchemy==2.4.4   # via -r requirements/prod.txt, flask-migrate
 flask==1.1.2              # via -r requirements/prod.txt, flask-migrate, flask-script, flask-sqlalchemy
-importlib-metadata==1.7.0  # via -r requirements/prod.txt, pluggy, pytest
+identify==1.5.0           # via -r requirements/prod.txt, pre-commit
+importlib-metadata==1.7.0  # via -r requirements/prod.txt, pluggy, pre-commit, pytest, virtualenv
 iniconfig==1.0.1          # via -r requirements/prod.txt, pytest
 itsdangerous==1.1.0       # via -r requirements/prod.txt, flask
 jinja2==2.11.2            # via -r requirements/prod.txt, flask
 mako==1.1.3               # via -r requirements/prod.txt, alembic
 markupsafe==1.1.1         # via -r requirements/prod.txt, jinja2, mako
 more-itertools==8.5.0     # via -r requirements/prod.txt, pytest
+nodeenv==1.5.0            # via -r requirements/prod.txt, pre-commit
 packaging==20.4           # via -r requirements/prod.txt, pytest
 pip-tools==5.3.1          # via -r requirements/prod.txt
 pluggy==0.13.1            # via -r requirements/prod.txt, pytest
+pre-commit==2.7.1         # via -r requirements/prod.txt
 py==1.9.0                 # via -r requirements/prod.txt, pytest
 pyparsing==2.4.7          # via -r requirements/prod.txt, packaging
 pytest==6.0.1             # via -r requirements/prod.txt
 python-dateutil==2.8.1    # via -r requirements/prod.txt, alembic
 python-dotenv==0.14.0     # via -r requirements/prod.txt
 python-editor==1.0.4      # via -r requirements/prod.txt, alembic
-six==1.15.0               # via -r requirements/prod.txt, packaging, pip-tools, python-dateutil
+pyyaml==5.3.1             # via -r requirements/prod.txt, pre-commit
+six==1.15.0               # via -r requirements/prod.txt, packaging, pip-tools, python-dateutil, virtualenv
 sqlalchemy==1.3.19        # via -r requirements/prod.txt, alembic, flask-sqlalchemy
-toml==0.10.1              # via -r requirements/prod.txt, pytest
+toml==0.10.1              # via -r requirements/prod.txt, pre-commit, pytest
+virtualenv==20.0.31       # via -r requirements/prod.txt, pre-commit
 werkzeug==1.0.1           # via -r requirements/prod.txt, flask
 zipp==3.1.0               # via -r requirements/prod.txt, importlib-metadata
 
